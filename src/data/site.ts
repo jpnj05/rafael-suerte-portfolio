@@ -21,7 +21,7 @@ export type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { label: "Index", to: "/" },
+  { label: "Home", to: "/" },
   { label: "Work", to: "/work" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
