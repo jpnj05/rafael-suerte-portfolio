@@ -1,8 +1,9 @@
 # Rafael Felipe Suerte — Portfolio
 
-A small, editorial portfolio built with **React + Vite**, **React-Bootstrap** and
-**React Router** (data router). Warm paper, hairline grid, Instrument Serif
-display type and one persimmon accent.
+A sharp, night-shift portfolio built with **React + Vite**, **React-Bootstrap**
+and **React Router** (data router). Near-black canvas, acid lime, condensed
+uppercase display type and data-style labels — deliberately loud, deliberately
+not another beige serif site.
 
 ## Run it
 
@@ -24,14 +25,23 @@ npm run preview  # serve the production build
 | `*`        | `src/pages/NotFound.tsx`  | 404                                             |
 
 All five pages are separate `.tsx` files and are linked from the single
-navigation bar (`src/components/SiteNav.tsx`), which collapses into an
-off-canvas menu on small screens.
+navigation bar (`src/components/SiteNav.tsx`), which becomes a full-screen
+menu on small screens.
 
 ## React-Bootstrap components used
 
 `Navbar` / `Nav` / `Offcanvas`, `Container`, `Row`, `Col`, `Card`, `Button`,
 `Badge`, `Accordion`, `ProgressBar`, `ListGroup`, `Table`, `Form`, `Alert`,
 `Modal`.
+
+## Design system
+
+- **Type:** Anton for display, Archivo for body, IBM Plex Mono for labels.
+- **Colour:** `#0a0a0c` canvas, `#f2f0e8` ink, `#d4ff3f` acid lime, with
+  cobalt and orange reserved for project covers.
+- **Shapes:** zero radius, 1px rules, hard offset shadows, rotated sticker.
+- **Motion:** page fade-up, hover lifts, scroll progress bar; all disabled
+  under `prefers-reduced-motion`.
 
 ## Editing content
 
@@ -48,8 +58,7 @@ update it before publishing.
 
 ## Notes
 
-- Paper-grain texture, grid lines, marquee, seal and page transition are pure
-  CSS/SVG; no animation library.
-- `prefers-reduced-motion` stops the marquee, seal and entrance animations.
+- Dot matrix, grid rules, project-cover patterns and the outlined footer
+  wordmark are pure CSS; no animation or SVG-illustration libraries.
 - `@media print` turns the About page into a clean one-column résumé sheet
   (the "Print résumé" button simply calls `window.print()`).

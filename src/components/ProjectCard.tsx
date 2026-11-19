@@ -12,7 +12,7 @@ export default function ProjectCard({ project, cta, onOpen }: Props) {
     <Card className={`work-card cover-${project.cover}`}>
       <div className="work-cover" aria-hidden="true">
         <span className="work-cover-index">{project.index}</span>
-        <span className="work-cover-mark">✳</span>
+        <span className="work-cover-mark">↗</span>
         <span className="work-cover-kind">{project.kind}</span>
       </div>
 

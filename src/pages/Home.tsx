@@ -1,17 +1,20 @@
 import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import Marquee from "../components/Marquee";
 import ProjectCard from "../components/ProjectCard";
-import RotatingSeal from "../components/RotatingSeal";
 import SectionLabel from "../components/SectionLabel";
 import {
   heroMeta,
-  marqueeItems,
   nowItems,
   profile,
   projects,
   stats,
 } from "../data/site";
+
+const capabilities = [
+  { key: "01", name: "Interface design" },
+  { key: "02", name: "Front-end build" },
+  { key: "03", name: "Type & identity" },
+];
 
 export default function Home() {
   const navigate = useNavigate();
@@ -21,20 +24,21 @@ export default function Home() {
     <>
       <section className="hero">
         <Container className="shell">
+          <div className="hero-topline">
+            <span>Portfolio</span>
+            <span>Vol. 04 / 2026</span>
+            <span className="hero-topline-right">Metro Manila, PH</span>
+          </div>
+
           <Row className="hero-top g-4 g-lg-5">
             <Col lg={7} className="hero-copy">
-              <div className="eyebrow">
-                <span className="eyebrow-dot" aria-hidden="true" />
-                Portfolio — Vol. 04 / 2026
-              </div>
-
               <h1 className="hero-name">
                 <span>Rafael</span>
                 <span className="hero-line-2">Felipe</span>
                 <span className="hero-line-3">
                   Suerte
-                  <span className="hero-star" aria-hidden="true">
-                    ✳
+                  <span className="hero-dot" aria-hidden="true">
+                    .
                   </span>
                 </span>
               </h1>
@@ -43,10 +47,10 @@ export default function Home() {
 
               <div className="hero-actions">
                 <Link to="/work" className="btn btn-ink">
-                  Selected work <span aria-hidden="true">↗</span>
+                  See the work <span aria-hidden="true">↗</span>
                 </Link>
                 <Link to="/about" className="btn btn-outline-ink">
-                  About &amp; résumé
+                  Résumé
                 </Link>
               </div>
             </Col>
@@ -61,11 +65,12 @@ export default function Home() {
                     height={1184}
                   />
                 </div>
-                <RotatingSeal
-                  className="portrait-seal"
-                  text="OPEN FOR WORK · METRO MANILA, PH · "
-                />
-                <figcaption>Rafael, at home in Manila — 2026</figcaption>
+                <div className="portrait-sticker" aria-hidden="true">
+                  <span>Open for work</span>
+                  <strong>2026</strong>
+                  <span>Manila, PH</span>
+                </div>
+                <figcaption>Fig. 01 — Rafael, at home in Manila</figcaption>
               </figure>
             </Col>
           </Row>
@@ -84,7 +89,22 @@ export default function Home() {
         </Container>
       </section>
 
-      <Marquee items={marqueeItems} />
+      <section className="capabilities">
+        <Container className="shell">
+          <div className="cap-grid">
+            {capabilities.map((item) => (
+              <div className="cap-cell" key={item.key}>
+                <span className="cap-key">{item.key}</span>
+                <span className="cap-name">{item.name}</span>
+              </div>
+            ))}
+            <div className="cap-cell cap-cell-lime">
+              <span className="cap-key">04</span>
+              <span className="cap-name">Open for work</span>
+            </div>
+          </div>
+        </Container>
+      </section>
 
       <section className="stats">
         <Container className="shell">
@@ -132,14 +152,14 @@ export default function Home() {
             <Col lg={5}>
               <SectionLabel index="02">Approach</SectionLabel>
               <h2 className="display">
-                A practice built on
+                Built loud.
                 <br />
-                <em>slow looking.</em>
+                <em>Shipped quiet.</em>
               </h2>
               <p className="page-lede">
-                I work from the words outward: a grid, a palette, a handful of
-                sentences. Then I build the smallest version that still feels
-                alive — and test it at 320px before I call it done.
+                I start with the words and the grid, then build the smallest
+                version that still has a pulse. Tested at 320px, with a keyboard,
+                on a slow phone — before it goes anywhere near a launch.
               </p>
             </Col>
 

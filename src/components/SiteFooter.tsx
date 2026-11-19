@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <Col xs={12} md={6} lg={4}>
             <p className="footer-brand">Rafael Felipe Suerte</p>
             <p className="footer-blurb">
-              Front-end developer and interface designer making small,
+              Front-end developer and interface designer making sharp,
               considered things for the web. Currently studying, always
               building.
             </p>
@@ -67,8 +67,14 @@ export default function SiteFooter() {
         <div className="footer-bottom">
           <span>© 2026 Rafael Felipe Suerte</span>
           <span>Designed &amp; built in Metro Manila</span>
-          <span className="footer-bottom-note">React · Vite · React-Bootstrap</span>
+          <span className="footer-bottom-note">
+            React · Vite · React-Bootstrap
+          </span>
         </div>
+
+        <span className="footer-wordmark" aria-hidden="true">
+          Rafael Suerte
+        </span>
       </Container>
     </footer>
   );

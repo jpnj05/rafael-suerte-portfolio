@@ -29,7 +29,7 @@ export default function About() {
             <em>loud details.</em>
           </>
         }
-        lede={profile.bio[0]}
+        lede={profile.bio[1]}
         meta={[profile.location, "Available Q1 2027", "BS Information Technology"]}
       />
 
