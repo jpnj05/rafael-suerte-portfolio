@@ -18,7 +18,7 @@ npm run preview  # serve the production build
 
 | Route      | File                      | What it holds                                   |
 | ---------- | ------------------------- | ----------------------------------------------- |
-| `/`        | `src/pages/Home.tsx`      | Intro, portrait, stats, selected work, approach |
+| `/`        | `src/pages/Home.tsx`      | Intro, portrait, stats, approach                |
 | `/work`    | `src/pages/Work.tsx`      | Filterable project index + case-study modal     |
 | `/about`   | `src/pages/About.tsx`     | Résumé: profile, experience, education, skills  |
 | `/contact` | `src/pages/Contact.tsx`   | Public contact details + validated demo form    |

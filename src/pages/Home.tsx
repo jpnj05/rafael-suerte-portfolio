@@ -1,14 +1,7 @@
 import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 import SectionLabel from "../components/SectionLabel";
-import {
-  heroMeta,
-  nowItems,
-  profile,
-  projects,
-  stats,
-} from "../data/site";
+import { heroMeta, nowItems, profile, stats } from "../data/site";
 
 const capabilities = [
   { key: "01", name: "Interface design" },
@@ -17,9 +10,6 @@ const capabilities = [
 ];
 
 export default function Home() {
-  const navigate = useNavigate();
-  const featured = projects.slice(0, 3);
-
   return (
     <>
       <section className="hero">
@@ -27,7 +17,7 @@ export default function Home() {
           <div className="hero-topline">
             <span>Portfolio</span>
             <span>Vol. 04 / 2026</span>
-            <span className="hero-topline-right">Metro Manila, PH</span>
+            <span className="hero-topline-right">Iloilo City, PH</span>
           </div>
 
           <Row className="hero-top g-4 g-lg-5">
@@ -68,9 +58,9 @@ export default function Home() {
                 <div className="portrait-sticker" aria-hidden="true">
                   <span>Open for work</span>
                   <strong>2026</strong>
-                  <span>Manila, PH</span>
+                  <span>Iloilo City, PH</span>
                 </div>
-                <figcaption>Fig. 01 — Rafael, at home in Manila</figcaption>
+                <figcaption>Fig. 01 — Rafael, at home in Iloilo</figcaption>
               </figure>
             </Col>
           </Row>
@@ -121,36 +111,9 @@ export default function Home() {
 
       <section className="section">
         <Container className="shell">
-          <SectionLabel
-            index="01"
-            action={
-              <Link className="section-action" to="/work">
-                All projects <span aria-hidden="true">↗</span>
-              </Link>
-            }
-          >
-            Selected work
-          </SectionLabel>
-
-          <Row className="g-4">
-            {featured.map((project) => (
-              <Col md={6} lg={4} key={project.slug}>
-                <ProjectCard
-                  project={project}
-                  cta="View project"
-                  onOpen={() => navigate("/work")}
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section className="section">
-        <Container className="shell">
           <Row className="g-4 g-lg-5 align-items-start">
             <Col lg={5}>
-              <SectionLabel index="02">Approach</SectionLabel>
+              <SectionLabel index="01">Approach</SectionLabel>
               <h2 className="display">
                 Built loud.
                 <br />

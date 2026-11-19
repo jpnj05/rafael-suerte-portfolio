@@ -31,14 +31,14 @@ export const profile = {
   name: "Rafael Felipe Suerte",
   shortName: "Rafael Suerte",
   role: "Front-end developer & interface designer",
-  location: "Metro Manila, Philippines",
+  location: "Iloilo City, Philippines",
   timeZone: "Asia/Manila",
-  email: "hello@rafaelsuerte.dev",
+  email: "rsuertefelipe@usa.edu.ph",
   phone: "+63 917 000 0000",
   availability: "Open for work",
   status: "Open to internships & freelance",
   intro:
-    "I'm Rafael — a front-end developer and interface designer based in Metro Manila. I build calm, tactile websites where typography, motion and code meet.",
+    "I'm Rafael — a front-end developer and interface designer based in Iloilo City. I build calm, tactile websites where typography, motion and code meet.",
   bio: [
     "I'm an Information Technology student who fell for the web through type. Most of my work starts on paper: a grid, a palette, a handful of words, and a question about how the page should feel before anyone reads it.",
     "I care about the unglamorous parts — semantic markup, honest loading states, layouts that hold up at 320px. I like interfaces that get out of the way, and details you only notice the second time you look.",
@@ -56,7 +56,7 @@ export const marqueeItems = [
   "Typography",
   "Motion",
   "Design systems",
-  "Manila, PH",
+  "Iloilo City, PH",
 ];
 
 export const stats = [
@@ -66,7 +66,7 @@ export const stats = [
 ];
 
 export const heroMeta = [
-  { key: "Based in", value: "Metro Manila, PH" },
+  { key: "Based in", value: "Iloilo City, PH" },
   { key: "Focus", value: "Interface · Type · Motion" },
   { key: "Status", value: "Open to internships" },
 ];
@@ -170,7 +170,7 @@ export const experience = [
     period: "2026 — Now",
     role: "Freelance Front-end Developer",
     company: "Independent",
-    location: "Remote · Metro Manila",
+    location: "Remote · Iloilo City",
     points: [
       "Design and build marketing sites and small products for studios, cafés and campus organizations.",
       "Own the whole pipeline: wireframes, type and colour, React implementation, deployment and handover.",

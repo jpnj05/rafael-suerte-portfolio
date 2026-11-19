@@ -66,7 +66,7 @@ export default function SiteFooter() {
 
         <div className="footer-bottom">
           <span>© 2026 Rafael Felipe Suerte</span>
-          <span>Designed &amp; built in Metro Manila</span>
+          <span>Designed &amp; built in Iloilo City</span>
           <span className="footer-bottom-note">
             React · Vite · React-Bootstrap
           </span>
