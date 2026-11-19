@@ -50,7 +50,7 @@ export default function Home() {
                   See the work <span aria-hidden="true">↗</span>
                 </Link>
                 <Link to="/about" className="btn btn-outline-ink">
-                  Résumé
+                  Resume
                 </Link>
               </div>
             </Col>

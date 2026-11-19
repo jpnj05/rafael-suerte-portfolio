@@ -21,7 +21,7 @@ export default function About() {
   return (
     <Container className="shell">
       <PageIntro
-        eyebrow="About — Résumé"
+        eyebrow="About — Resume"
         title={
           <>
             Quiet systems,
@@ -68,7 +68,7 @@ export default function About() {
 
             <div className="profile-actions">
               <Button className="btn-ink" onClick={() => window.print()}>
-                Print résumé <span aria-hidden="true">↗</span>
+                Print resume <span aria-hidden="true">↗</span>
               </Button>
               <a className="btn btn-outline-ink" href={`mailto:${profile.email}`}>
                 Email me
